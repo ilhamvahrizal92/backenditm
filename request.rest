@@ -1,0 +1,50 @@
+//create User
+POST http://localhost:5000/users
+Content-Type: application/json
+ 
+{
+    "name": "Ilham Vahrizal",
+    "email": "ilham.vahrizal@gmail.com",
+    "password": "ilham123",
+    "confPassword": "ilham123",
+    "role": "admin"
+}
+
+###
+//get All user
+GET http://localhost:5000/users
+
+###
+//get All user
+GET http://localhost:5000/user/getmeldap
+
+###
+//getGreating
+GET http://localhost:5000/greeting
+
+###
+//get All user
+GET http://localhost:5000/users/394c0dbe-ae1a-4ef6-8e82-f6cc1c140cf9
+
+###
+//Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"ilham.vahrizal@gmail.com",
+    "password":"ilham123"
+}
+
+###
+POST http://localhost:5000/user/ldap
+Content-Type: application/json
+
+{
+    "email":"gauss",
+    "password":"password"
+}
+
+###
+//getGreating
+DELETE http://localhost:5000/logout
